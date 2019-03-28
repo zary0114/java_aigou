@@ -1,0 +1,18 @@
+server:
+  port: 1299
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka
+  instance:
+    prefer-ip-address: true
+spring:
+  application:
+    name: spring-cloud-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/zary0114/java_aigou_config.git  #git文件地址
+          username: 1872710105@qq.com
+          password: zxczhhysj992123
